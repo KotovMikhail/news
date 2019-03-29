@@ -1,0 +1,35 @@
+.main-nav {
+  margin-bottom: 10.204%;
+  padding-right: 16.327%;
+  padding-left: 26.531%;
+
+  @include tablet-max {
+    margin-bottom: 40px;
+    padding-right: 64px;
+    padding-left: 104px;
+  }
+
+  @include mobile-max {
+    padding-right: 56px;
+    padding-left: 64px;
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  display: block;
+}
+
+.main-nav__link {
+  display: block;
+  font-size: 0.972vw;
+  line-height: 1.79;
+
+  @include tablet-max {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}

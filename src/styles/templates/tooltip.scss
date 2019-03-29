@@ -1,0 +1,126 @@
+.tooltip {
+  position: fixed;
+  right: 0.972vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  opacity: 1;
+
+  &__list {
+    @include list-reset();
+  }
+
+  @include tablet-max {
+    right: 14px;
+  }
+
+  @include mobile-max {
+    display: none;
+  }
+}
+
+.tooltip__item {
+  position: relative;
+  width: 2.5vw;
+  height: 2.5vw;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet-max {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 4px;
+  }
+}
+
+.tooltip__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.tooltip__circle-left,
+.tooltip__circle-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.tooltip__circle-left::after,
+.tooltip__circle-right::after{
+  width:100%;
+  height:100%;
+  position: absolute;
+  content: "";
+  transition: transform 0.3s linear;
+  box-sizing:border-box;
+
+  @include tablet-max {
+    border:1px solid $hovered-color;
+  }
+}
+
+.tooltip__circle-left::after {
+  border-right:none;
+  border-radius: 2.36111111111111vw 0 0 2.36111111111111vw;
+  transform:rotateZ(180deg);
+  transform-origin: right center;
+  transition-delay:0.3s;
+
+  @include tablet-max {
+    border-radius: 34px 0 0 34px;
+  }
+}
+
+.tooltip__circle-right::after {
+  border-left:none;
+  border-radius: 0 2.36111111111111vw 2.36111111111111vw 0;
+  transform:rotateZ(180deg);
+  transform-origin: left center;
+
+  @include tablet-max {
+    border-radius: 0 34px 34px 0;
+  }
+}
+
+.tooltip__link.js-active .tooltip__circle-right::after,
+.tooltip__link.js-active .tooltip__circle-left::after {
+  transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+  border: 0.069444444vw solid $hovered-color;
+}
+
+.tooltip__link.js-active .tooltip__circle-left::after {
+  border-right-color: transparent;
+}
+
+.tooltip__link.js-active .tooltip__circle-right::after {
+  border-left-color: transparent;
+}
+
+.tooltip__link.js-active .tooltip__circle-center {
+  background-color: $hovered-color
+}
+
+.tooltip__circle-center{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.41666666666667vw;
+  height: 0.41666666666667vw;
+  border-radius: 50%;
+  background-color: $inactive-color;
+  z-index:9999;
+  margin: 0;
+
+  @include tablet-max {
+    width: 6px;
+    height: 6px;
+  }
+}

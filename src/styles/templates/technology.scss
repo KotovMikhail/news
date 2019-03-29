@@ -1,0 +1,241 @@
+.technology {
+  position: relative;
+  height: 62.5vw;
+  padding-top: 5.417vw;
+  padding-bottom: 240px;
+  background-color: $bg-gray;
+  transition: background-color 1.6s;
+  overflow: hidden;
+
+  &--bg-violet,
+  .technology__info--brand-power {
+    background-color: $bg-violet;
+
+    .technology__title {
+      color: $grey-light-title;
+    }
+
+    .technology__desc {
+      color: lightgray;
+    }
+
+    .technology__accent {
+      color: white;
+    }
+
+    .stickers {
+
+      .stickers__front,
+      .stickers__back {
+        background-color: white;
+      }
+
+      .stickers__desc {
+        color: $violet;
+
+        &::after {
+          color: white;
+          background-color: $violet;
+        }
+      }
+
+      .stickers__flip-side-desc {
+        color: $violet;
+      }
+    }
+
+    .slider__control {
+      background-color: white;
+
+      &:hover,
+      &:focus {
+        background-color: $hovered-color;
+      }
+
+      svg {
+        stroke: $violet;
+      }
+
+      &:hover svg,
+      &:focus svg {
+        stroke: white;
+      }
+
+      &--disabled {
+        background-color: $inactive-color;
+
+        svg {
+          stroke: white;
+        }
+      }
+
+      &--disabled:hover,
+      &--disabled:focus {
+        background-color: $inactive-color;
+
+        svg {
+          stroke: white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    min-height: 1205px;
+    padding-top: 80px;
+    padding-bottom: 106px;
+  }
+
+  @media (max-width: 979px) {
+    min-height: 1504px;
+  }
+
+  @include mobile-max {
+    height: auto;
+    min-height: 1px;
+    padding-top: 54px;
+    padding-bottom: 0;
+
+    &--bg-violet {
+      background-color: $bg-gray;
+
+      .technology__title {
+        color: $grey-title;
+      }
+
+      .technology__info--foresight {
+        .technology__desc {
+          color: $black-other;
+        }
+
+        .technology__accent {
+          color: $violet;
+        }
+
+        .stickers {
+          .stickers__front,
+          .stickers__back {
+            background-color: $violet;
+          }
+
+          .stickers__desc {
+            color: white;
+
+            &::after {
+              color: $violet;
+              background-color: white;
+            }
+          }
+
+          .stickers__flip-side-desc {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.technology__title-break {
+  @include mobile-max {
+    display: none;
+  }
+}
+
+.technology__wrapper {
+  position: relative;
+}
+
+.technology__title {
+  @include tablet-max {
+    margin-bottom: 56px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 36px;
+  }
+}
+
+.technology__info {
+  @include mobile-max {
+    &--foresight {
+      padding-bottom: 55px;
+    }
+
+    &--brand-power {
+      margin-left: -8px;
+      margin-right: -8px;
+      padding-top: 72px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 72px;
+
+      .technology__desc {
+        margin-bottom: 55px;
+      }
+    }
+
+    .technology__desc {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.technology__desc {
+  position: absolute;
+  top: 15.973vw;
+  right: 1.389vw;
+  width: 42.987%;
+  margin-top: 2.778vw;
+  margin-left: auto;
+  margin-right: 4.444vw;
+  margin-bottom: 0;
+  padding-right: 0.972vw;
+  font-family: $warnock-pro;
+  font-style: italic;
+  color: $black-other;
+  line-height: 1.423;
+  font-size: 1.944vw;
+  letter-spacing: 0.5px;
+
+  @include tablet-max {
+    top: 192px;
+    right: 41px;
+    width: 100%;
+    max-width: 598px;
+    margin-top: 300px;
+    margin-right: 48px;
+    padding-right: 14px;
+    line-height: 39px;
+    font-size: 28px;
+  }
+
+  @include mobile-max {
+    position: static;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 42px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.9px;
+  }
+}
+
+.technology__accent {
+  color: $active-color;
+}
+
+.title-wrapper {
+  position: relative;
+}
+
+.break-word__element {
+  display: none;
+
+  @media (max-width: 540px) {
+    display: block;
+  }
+}

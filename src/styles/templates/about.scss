@@ -1,0 +1,38 @@
+.about {
+  position: relative;
+  height: 62.5vw;
+  padding-top: 5.5vw;
+  padding-bottom: 240px;
+  background-color: $gray;
+  background-image: url('../img/bg-block-3.jpg');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url('../img/bg-block-3@2x.jpg');
+  }
+
+  @include tablet-max {
+    height: auto;
+    min-height: 1px;
+    padding-top: 53px;
+    padding-bottom: 93px;
+  }
+}
+
+.about__title {
+  @include tablet-max {
+    margin-bottom: 40px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 45px;
+  }
+}
+
+.about__container {
+  max-width: none;
+}

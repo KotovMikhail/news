@@ -1,0 +1,456 @@
+.contact {
+  background-color: $bg-gray-light;
+}
+
+.contact__wrapper {
+  padding-top: 4.931vw;
+  padding-bottom: 5.833vw;
+
+  @include laptop-max {
+    padding-top: 71px;
+    padding-bottom: 84px;
+  }
+
+  @include mobile-max {
+    padding-top: 51px;
+    padding-bottom: 63px;
+  }
+}
+
+.contact__form {
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include laptop-max {
+    max-width: 864px;
+    width: 100%;
+  }
+
+  @include tablet-max {
+    max-width: 672px;
+  }
+}
+
+.contact__detail {
+  width: 28.472vw;
+  margin-top: 0;
+  margin-bottom: 2.153vw;
+  font-size: 0.972vw;
+  line-height: 1.885;
+  color: $violet;
+
+  @include laptop-max {
+    max-width: 410px;
+    width: 100%;
+    margin-bottom: 31px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  @include mobile-max {
+    max-width: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 26px;
+    text-align: center;
+  }
+}
+
+.contact__inputs-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-bottom: 2.431vw;
+  box-shadow: 0px 1.0417vw 2.778vw rgba(130, 0, 175, 0.2);
+
+  @include laptop-max {
+    margin-bottom: 35px;
+    box-shadow: 0px 15px 40px rgba(130, 0, 175, 0.2);
+  }
+
+  @include tablet-max {
+    width: 100%;
+    max-width: 672px;
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
+}
+
+.contact--support {
+  @include mobile-max {
+    .contact__wrapper {
+      padding-bottom: 78px;
+    }
+
+    .contact__inputs-wrapper {
+      margin-bottom: 28px;
+    }
+
+    .contact__checkbox-label {
+      line-height: 18px;
+    }
+  }
+}
+
+.contact__error-text {
+  position: absolute;
+  top: -1.528vw;
+  left: 0;
+  display: none;
+  margin: 0;
+
+  @include laptop-max {
+    top: -22px;
+  }
+}
+
+.contact__input-wrapper {
+  min-height: 1px;
+  margin-right: 0.069444vw;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+
+  @include laptop-max {
+    margin-right: 1px;
+  }
+
+  @include tablet-max {
+    width: 100%;
+    margin-bottom: 1px;
+    margin-right: 0;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contact__input-wrapper--invalid {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.069444vw;
+    background-color: red;
+    height: 100%;
+    width: 0.069444vw;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -0.069444vw;
+    background-color: red;
+    height: 100%;
+    width: 0.069444vw;
+  }
+
+  @include laptop-max {
+    &::before {
+      left: -1px;
+      width: 1px;
+    }
+
+    &::after {
+      right: -1px;
+      width: 1px;
+    }
+  }
+
+  input {
+    border-top: 0.069444vw solid red;
+    border-bottom: 0.069444vw solid red;
+    border-left: 0.069444vw solid transparent;
+    border-right: 0.069444vw solid transparent;
+    transition: border .3s;
+
+    &:hover,
+    &:focus {
+      transition: border .3s;
+      border-top: 0.069444vw solid red;
+      border-bottom: 0.069444vw solid red;
+      border-left: 0.069444vw solid transparent;
+      border-right: 0.069444vw solid transparent;
+    }
+
+    @include laptop-max {
+      border-top: 1px solid red;
+      border-bottom: 1px solid red;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      transition: border .3s;
+
+      &:hover,
+      &:focus {
+        transition: border .3s;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+      }
+    }
+  }
+
+  .contact__error-text {
+    display: block;
+    font-size: 0.833vw;
+    line-height: 1.75;
+    color: red;
+
+    @include laptop-max {
+      font-size: 12px;
+      line-height: 21px;
+    }
+
+    @include tablet-max {
+      display: none;
+    }
+  }
+}
+
+.contact__input {
+  &--name {
+    width: 14.375vw;
+  }
+
+  &--email {
+    width: 15.4861vw;
+  }
+
+  &--tel {
+    width: 16.5972vw;
+  }
+
+  @include laptop-max {
+    &--name {
+      width: 207px;
+    }
+
+    &--email {
+      width: 223px;
+    }
+
+    &--tel {
+      width: 239px;
+    }
+  }
+
+  @include tablet-max {
+    width: 100%;
+  }
+
+  @include mobile-max {
+    height: auto;
+    padding: 18px 14px 18px;
+  }
+}
+
+.contact__btn {
+  width: 13.333vw;
+  padding-top: 1.3194vw;
+  padding-bottom: 1.25vw;
+  box-shadow: none;
+
+  @include laptop-max {
+    width: 192px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+  }
+
+  @include tablet-max {
+    width: 100%;
+  }
+}
+
+.contact__checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: 2.639vw;
+  font-size: 0.972vw;
+  line-height: 1.785;
+  color: $gray-light;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.069444vw;
+    left: 0;
+    width: 1.667vw;
+    height: 1.667vw;
+    background-color: white;
+    border: 0.069444vw solid $inactive-color;
+    transition: border 0.3s;
+  }
+
+  @include laptop-max {
+    padding-left: 38px;
+    font-size: 14px;
+    line-height: 25px;
+
+    &::before {
+      top: 1px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid $inactive-color;
+    }
+  }
+
+  @include mobile-max {
+    display: inline-block;
+    padding-top: 3px;
+    padding-left: 40px;
+    font-size: 12px;
+    line-height: 21px;
+
+    &::before {
+      top: 4px;
+    }
+  }
+}
+
+input[type="checkbox"]:focus+.contact__checkbox-label::before {
+  border: 1px solid $hovered-color;
+
+  @include laptop-max {
+    border: 0.069444vw solid $hovered-color;
+  }
+}
+
+input[type="checkbox"]:checked+.contact__checkbox-label::before {
+  background-image: url("../img/ico-checkbox-checked.svg");
+  background-repeat: no-repeat;
+  transition: .3s;
+  border: 0.069444vw solid $active-color;
+  background-size: 1.181vw;
+  background-position: 50% 0.3472vw;
+
+  @include laptop-max {
+    border: 1px solid $active-color;
+    background-size: 17px 11px;
+    background-position: 50% 5px;
+  }
+}
+
+input[type="checkbox"]:not(:checked)+.contact__checkbox-label:hover::before {
+  transition: .3s;
+  border: 0.069444vw solid $hovered-color;
+
+  @include laptop-max {
+    border: 1px solid $hovered-color;
+  }
+}
+
+input[type="checkbox"]:not(:checked)+.contact__checkbox-label::before {
+  border: 0.069444vw solid $inactive-color;
+  transition: .3s;
+
+  @include laptop-max {
+    border: 1px solid $inactive-color;
+  }
+}
+
+.contact--modal {
+  .contact__wrapper {
+    padding-top: 5.4167vw;
+    padding-bottom: 4.2361vw;
+
+    @include laptop-max {
+      padding-top: 78px;
+      padding-bottom: 61px;
+    }
+
+    @include mobile-max {
+      padding-top: 15px;
+      padding-bottom: 45px;
+    }
+  }
+
+  .contact__detail {
+    margin-bottom: 1.8056vw;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+    line-height: 1.785;
+
+    @include laptop-max {
+      margin-bottom: 26px;
+      line-height: 25px;
+    }
+  }
+
+  .contact__form {
+    width: 21.111vw;
+
+    @include laptop-max {
+      width: 100%;
+      max-width: 304px;
+    }
+  }
+
+  .contact__inputs-wrapper {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 2.361vw;
+
+    @include laptop-max {
+      margin-bottom: 34px;
+    }
+  }
+
+  .contact__input-wrapper {
+    width: 100%;
+    margin-bottom: 0.1389vw;
+    margin-right: 0;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    @include laptop-max {
+      margin-bottom: 2px;
+    }
+  }
+
+  .contact__input {
+    width: 100%;
+    height: 4.375vw;
+    padding: 1.25vw 0.972vw 1.31944vw;
+
+    @include laptop-max {
+      height: 63px;
+      padding: 18px 14px 19px;
+    }
+  }
+
+  .contact__btn {
+    width: 100%;
+    padding-top: 1.25vw;
+    padding-bottom: 1.31944vw;
+
+    @include laptop-max {
+      padding-top: 18px;
+      padding-bottom: 19px;
+    }
+  }
+
+  .contact__checkbox-label {
+    &::before {
+      top: 0.4861vw;
+      left: 0.069444vw;
+    }
+
+    @include tablet-max {
+      &::before {
+        top: 7px;
+        left: 1px;
+      }
+    }
+  }
+}

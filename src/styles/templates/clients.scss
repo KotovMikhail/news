@@ -1,0 +1,20 @@
+.clients {
+  position: relative;
+  height: 62.5vw;
+  padding-top: 5.56vw;
+  background-color: $gray;
+  overflow: hidden;
+
+  @include tablet-max {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 106px;
+  }
+
+  @include mobile-max {
+    height: auto;
+    min-height: 1px;
+    padding-top: 54px;
+    padding-bottom: 88px;
+  }
+}

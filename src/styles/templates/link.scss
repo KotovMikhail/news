@@ -1,0 +1,23 @@
+.link {
+  color: $active-color;
+  outline: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $hovered-color;
+    transition: color .3s;
+  }
+
+  &.js-active {
+    color: $inactive-color;
+    transition: color .3s;
+    cursor: auto;
+
+    &:hover,
+    &:focus {
+      color: $inactive-color;
+      transition: color .3s;
+    }
+  }
+}

@@ -1,0 +1,247 @@
+.clients__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  @include desktop-max {
+    margin: 0 auto;
+  }
+}
+
+.clients__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.97vw;
+  height: 7.4306vw;
+
+  @include tablet-max {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    max-width: 218px;
+    height: auto;
+    min-height: 107px;
+  }
+
+  @include mobile-max {
+    width: 50%;
+  }
+}
+
+.clients__logo {
+  img {
+    width: 100%;
+  }
+
+  &--docs {
+    width: 8.056vw;
+    height: 4.931vw;
+
+    @include tablet-max {
+      width: 116px;
+      height: 72px;
+    }
+
+    @include mobile-max {
+      width: 100px;
+      height: 59px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &--coffee {
+    height: 2.2917vw;
+    width: 5.972vw;
+
+    @include tablet-max {
+      width: 86px;
+      height: 33px;
+    }
+
+    @include mobile-max {
+      width: 75px;
+      height: 28px;
+      margin-top: 12px;
+      margin-left: 4px;
+    }
+  }
+
+  &--world {
+    width: 5.9028vw;
+    height: 1.736vw;
+
+    @include tablet-max {
+      width: 85px;
+      height: 24px;
+    }
+
+    @include mobile-max {
+      width: 72px;
+      height: 21px;
+      margin-bottom: 5px;
+      margin-left: 1px;
+    }
+  }
+
+  &--liga {
+    width: 7.7083vw;
+    height: 2.3611vw;
+
+    @include tablet-max {
+      width: 111px;
+      height: 33px;
+    }
+
+    @include mobile-max {
+      width: 92px;
+      height: 30px;
+      margin-bottom: 13px;
+      margin-left: 4px;
+    }
+  }
+
+  &--bank {
+    width: 8.6806vw;
+    height: 2.431vw;
+
+    @include tablet-max {
+      width: 125px;
+      height: 34px;
+    }
+
+    @include mobile-max {
+      width: 104px;
+      height: 30px;
+      margin-bottom: 13px;
+      margin-right: 5px;
+    }
+  }
+
+  &--tele {
+    width: 5.556vw;
+    height: 2.1528vw;
+
+    @include tablet-max {
+      width: 80px;
+      height: 31px;
+    }
+
+    @include mobile-max {
+      width: 70px;
+      height: 30px;
+      margin-bottom: 19px;
+      margin-left: 5px;
+    }
+  }
+
+  &--delivery {
+    width: 6.389vw;
+    height: 4.861vw;
+
+    @include tablet-max {
+      width: 92px;
+      height: 71px;
+    }
+
+    @include mobile-max {
+      width: 80px;
+      height: 58px;
+      margin-bottom: 17px;
+      margin-right: 7px;
+    }
+  }
+
+  &--rex {
+    width: 5.0694vw;
+    height: 4.2361vw;
+
+    @include tablet-max {
+      width: 73px;
+      height: 61px;
+    }
+
+    @include mobile-max {
+      width: 64px;
+      height: 53px;
+      margin-bottom: 17px;
+      margin-right: 2px;
+    }
+  }
+
+  &--bucks {
+    top: 28.35%;
+    right: 36.78%;
+    width: 4.3056vw;
+    height: 3.4722vw;
+
+    @include tablet-max {
+      top: 32px;
+      right: 78px;
+      width: 62px;
+      height: 51px;
+    }
+
+    @include mobile-max {
+      width: 54px;
+      height: 44px;
+      margin-top: 5px;
+      margin-right: 7px;
+    }
+  }
+
+  &--miracle {
+    width: 7.8472vw;
+    height: 3.125vw;
+
+    @include tablet-max {
+      width: 113px;
+      height: 44px;
+    }
+
+    @include mobile-max {
+      width: 95px;
+      height: 38px;
+      margin-top: 5px;
+      margin-left: 8px;
+    }
+  }
+
+  &--ksk {
+    width: 9.7917vw;
+    height: 3.4028vw;
+
+    @include tablet-max {
+      width: 141px;
+      height: 48px;
+    }
+
+    @include mobile-max {
+      width: 120px;
+      height: 42px;
+      margin-bottom: 22px;
+      margin-right: 6px;
+    }
+  }
+
+  &--nordav {
+    width: 11.111vw;
+    height: 1.389vw;
+
+    @include tablet-max {
+      width: 160px;
+      height: 19px;
+    }
+
+    @include mobile-max {
+      width: 134px;
+      height: 18px;
+      margin-bottom: 16px;
+      margin-left: 9px;
+    }
+  }
+}

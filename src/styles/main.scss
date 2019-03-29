@@ -1,0 +1,35 @@
+// Default
+@import "../libs/normalize-8.0.1"; // библиотека сброса стилей
+@import "global/_fonts"; // шрифты
+@import "global/_variables"; // переменные
+@import "global/_mixins"; // миксины
+@import "global/_global"; // глобальные стили
+
+// Template
+@import "templates/animate"; // анимация
+@import "templates/types"; // общее описание шрифтов
+@import "templates/btn"; // кнопки
+@import "templates/link"; // ссылки
+@import "templates/input"; // поля ввода
+@import "templates/header"; // шапка
+@import "templates/about"; // 3 экран
+@import "templates/technology"; // 5 экран
+@import "templates/job"; // 7 экран "
+@import "templates/help"; // 6 экран
+@import "templates/terms"; // 8 экран
+@import "templates/clients"; // 9 экран
+@import "templates/clients-list"; // блок с клинетами
+
+
+@import "templates/tooltip"; // подсказки справа
+@import "templates/stickers"; // стикер
+@import "templates/modal"; // модальное окно
+@import "templates/main-nav"; // меню
+@import "templates/footer"; // подвал
+@import "templates/intro"; // первый экран "Введение"
+@import "templates/slider"; // слайдер
+@import "templates/support"; // второй экран "Помощь"
+@import "templates/contact"; // контактная форма
+@import "templates/brand"; // четвертый экран "Бренд"
+
+@import "global/_overrides"; // переопределение существующих стилей плагинов

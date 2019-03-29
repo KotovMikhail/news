@@ -1,0 +1,29 @@
+<div class="modal modal--dark js-box-closed">
+  <div class="modal__wrapper modal__contact contact contact--modal">
+    <button class="modal__close-btn" type="button">
+      <span class="modal__close-icon"></span>
+      <span class="visually-hidden">Закрыть модальное окно</span>
+    </button>
+    <div class="contact__wrapper">
+      <form class="contact__form contact__form--modal" method="post" action="#">
+        <p class="contact__detail">Наш менеджер перезвонит вам, чтобы рассказать о продукте и ответить на возникшие вопросы</p>
+        <div class="contact__inputs-wrapper">
+          <div class="contact__input-wrapper">
+            <input class="contact__input contact__input--name input" type="text" name="name" placeholder="Имя" required>
+          </div>
+          <div class="contact__input-wrapper">
+            <input class="contact__input contact__input--email input" type="email" name="email" placeholder="E-mail" required>
+          </div>
+          <div class="contact__input-wrapper">
+            <input class="contact__input contact__input--tel input" type="tel" name="tel" placeholder="Телефон" required>
+          </div>
+          <button class="contact__btn contact__btn--modal btn" type="submit">Отправить</button>
+        </div>
+        <div class="contact__checkbox-wrapper">
+          <input class="visually-hidden" id="agreement-modal" type="checkbox" name="agreement" checked>
+          <label class="contact__checkbox-label" for="agreement-modal">Я согласен с условиями обработки персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

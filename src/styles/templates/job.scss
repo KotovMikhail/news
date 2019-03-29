@@ -1,0 +1,48 @@
+.job {
+  position: relative;
+  height: 76.389vw;
+  padding-top: 5.556%;
+  background-color: $gray;
+  background-image: url("../img/bg-block-7.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url('../img/bg-block-7@2x.jpg');
+  }
+
+  @include tablet-max {
+    height: auto;
+    min-height: 1px;
+    padding-top: 80px;
+    padding-bottom: 110px;
+  }
+
+  @include mobile-max {
+    padding-top: 55px;
+    padding-bottom: 98px;
+  }
+}
+
+.job__break {
+  @include tablet-max {
+    display: none;
+  }
+}
+
+.job__container {
+  position: relative;
+}
+
+.job__title {
+  @include tablet-max {
+    margin-bottom: 50px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 79px;
+  }
+}

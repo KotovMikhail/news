@@ -1,0 +1,43 @@
+.terms {
+  position: relative;
+  height: 62.5vw;
+  padding-top: 5.556vw;
+  padding-bottom: 240px;
+  background-color: $bg-gray;
+  overflow: hidden;
+
+  @media (max-width: 539px) {
+    padding-top: 57px;
+  }
+
+  @include tablet-max {
+    height: auto;
+    min-height: 1px;
+    padding-top: 80px;
+    padding-bottom: 110px;
+  }
+
+  @include mobile-max {
+    padding-top: 54px;
+    padding-bottom: 104px;
+  }
+}
+
+.terms__title {
+  width: 88.26%;
+
+  @include tablet-max {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 34px;
+  }
+}
+
+.terms__container {
+  position: relative;
+}
+
+

@@ -1,0 +1,41 @@
+// Media
+
+@mixin desktop-max {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop-max {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet-max {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-max {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+/* Остальные миксины */
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

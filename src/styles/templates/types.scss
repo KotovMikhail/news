@@ -1,0 +1,158 @@
+.title {
+  margin: 0;
+  font-family: $geometria;
+  color: $white-title;
+  letter-spacing: -3px;
+  font-weight: 400;
+  font-size: 12.5vw;
+  line-height: 0.9445;
+
+  @include tablet-max {
+    font-size: 120px;
+    line-height: 113px;
+  }
+
+  @include mobile-max {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  &--grey {
+    color: $grey-title;
+  }
+
+  &--light-gray {
+    color: $gray-light-title;
+  }
+
+  &--support {
+    letter-spacing: 0.4px;
+
+    @include mobile-max {
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+
+  &--brand {
+    letter-spacing: 0.3px;
+
+    @include mobile-max {
+      font-size: 41px;
+      line-height: 38px;
+      letter-spacing: -0.3px;
+    }
+  }
+
+  &--about {
+
+    @media (max-width: $desktop) {
+      letter-spacing: 0.1px;
+    }
+
+    @include mobile-max {
+      margin-bottom: 50px;
+      line-height: 38px;
+      font-size: 40px;
+    }
+  }
+
+  &--technology {
+    width: 61%;
+    letter-spacing: 0.2px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      max-width: 880px;
+      letter-spacing: 0.3px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 55px;
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+
+  &--help {
+
+    @media (max-width: $desktop) {
+      letter-spacing: 0.1px;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      max-width: 660px;
+    }
+
+     @media (max-width: 539px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: $mobile) {
+      line-height: 29px;
+      font-size: 37px;
+    }
+  }
+
+  &--job {
+
+    @media (max-width: $desktop) {
+      max-width: 520px;
+      letter-spacing: 0.1px;
+    }
+
+    @media (max-width: $tablet) {
+      line-height: 145px;
+      font-size: 135px;
+    }
+
+    @media (max-width: 1239px) {
+      width: auto;
+      max-width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 420px;
+      line-height: 38px;
+      font-size: 40px;
+    }
+  }
+
+  &--terms {
+
+    @media (max-width: $desktop) {
+      letter-spacing: 0.2px;
+    }
+
+    @media (max-width: $tablet) {
+      width: auto;
+    }
+
+    @include mobile-max {
+      margin-bottom: 45px;
+      line-height: 38px;
+      font-size: 40px;
+    }
+  }
+
+  &--clients {
+    margin-bottom: 2.855vw;
+    letter-spacing: 0.2px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+      width: auto;
+      line-height: 135px;
+      font-size: 125px;
+    }
+
+    @media (max-width: $mobile) {
+      line-height: 38px;
+      font-size: 40px;
+    }
+  }
+}

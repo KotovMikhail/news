@@ -1,0 +1,114 @@
+.intro {
+  position: relative;
+  height: 100vh;
+  height: calc(100vh - var(--vh-offset, 0px));
+  padding-bottom: 295px;
+  background-color: $gray;
+  background-image: url("../img/bg-intro.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/bg-intro@2x.jpg');
+  }
+
+  @include mobile-max {
+    background-position: 66.2% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    background-position: right top;
+    background-size: cover;
+  }
+}
+
+.intro__title {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  @include mobile-max {
+    margin-bottom: 0;
+  }
+}
+
+.intro__title-text {
+  font-size: 13.333vh;
+  line-height: 1.25;
+
+  @include tablet-max {
+    font-size: 8.889vh;
+  }
+
+  @include mobile-max {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.intro__title-sub-text {
+  font-size: 13.333vh;
+  font-weight: 400;
+  line-height: 1.1785;
+  letter-spacing: 4.8px;
+  font-family: $warnock-pro;
+  font-style: italic;
+
+  @include tablet-max {
+    font-size: 8.333vh;
+    line-height: 1.253;
+    letter-spacing: 2.1px;
+  }
+
+  @include mobile-max {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+  }
+}
+
+.intro__info {
+  height: auto;
+}
+
+.intro__text {
+  width: 42.531%;
+  margin: 0;
+  font-size: 2.085vw;
+  line-height: 1.7;
+
+  @include tablet-max {
+    max-width: 578px;
+    width: auto;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  @include mobile-max {
+    max-width: 358px;
+    padding-right: 15px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.intro__stickers-wrapper {
+  height: 1px;
+  min-height: 100vh;
+
+  @include desktop-max {
+    height: auto;
+    min-height: 1px;
+  }
+}
+
+.intro__stickers-container {
+  position: relative;
+
+  @include desktop-max {
+    position: static;
+  }
+}

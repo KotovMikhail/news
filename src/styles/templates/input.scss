@@ -1,0 +1,45 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.input {
+  height: 4.4444vw;
+  padding: 1.31944vw 1.25vw 1.25vw;
+  font-family: inherit;
+  font-size: .972vw;
+  line-height: 1.785;
+  background-color: white;
+  outline: none;
+  border: 0.069444vw solid white;
+  transition: border-color .5s;
+
+  &:hover {
+    transition: border-color .3s;
+    border-color: $hovered-color;
+  }
+
+  &:focus {
+    transition: border-color .3s;
+    border-color: $active-color;
+  }
+
+  &::placeholder {
+    font: inherit;
+    color: $gray-light;
+  }
+
+  @include laptop-max {
+    height: 64px;
+    padding: 19px 18px 18px;
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid white;
+  }
+
+  @include mobile-max {
+    padding: 19px 14px 18px;
+  }
+}

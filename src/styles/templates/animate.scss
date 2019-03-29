@@ -1,0 +1,296 @@
+.wow,
+.wowIntro {
+  visibility: hidden;
+}
+
+@keyframes stayvisible {
+  from {
+    visibility: visible;
+  }
+
+  to {
+    visibility: visible;
+  }
+}
+
+@-ms-keyframes donothing {
+  0% {
+  }
+
+  100% {
+  }
+}
+
+@keyframes referenceDown {
+  from {
+    bottom: 0;
+  }
+
+  30% {
+    bottom: 1rem;
+  }
+
+  50% {
+    bottom: 0;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes referenceRight {
+  from {
+    right: 0;
+  }
+
+  30% {
+    right: -1rem;
+  }
+
+  50% {
+    right: 0;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes referenceLeft {
+  from {
+    right: 0;
+  }
+
+  30% {
+    right: 1rem;
+  }
+
+  50% {
+    right: 0;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1.19s;
+  animation-fill-mode: both;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes sticker-10 {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(0deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(-10deg);
+  }
+}
+
+@keyframes sticker-5 {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(-5deg);
+  }
+}
+
+@keyframes sticker-3 {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(7deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(-3deg);
+  }
+}
+
+@keyframes sticker {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(0deg);
+  }
+}
+
+@keyframes sticker3 {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(13deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(3deg);
+  }
+}
+
+@keyframes sticker5 {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(-5deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(5deg);
+  }
+}
+
+@keyframes sticker10 {
+  from {
+    opacity: 0;
+    transform: scale(2) translate(30%) translateZ(600px) rotate(0deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0%) translateZ(0) rotate(10deg);
+  }
+}
+
+.sticker-10 {
+  animation-name: sticker-10;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.sticker-5 {
+  animation-name: sticker-5;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.sticker-3 {
+  animation-name: sticker-3;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.sticker {
+  animation-name: sticker;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.sticker3 {
+  animation-name: sticker3;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.sticker5 {
+  animation-name: sticker5;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.sticker10 {
+  animation-name: sticker10;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+
+  @include mobile-max {
+    animation: none;
+  }
+}
+
+.animated {
+  animation-fill-mode: both;
+}
+
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
+}

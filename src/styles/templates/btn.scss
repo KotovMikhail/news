@@ -1,0 +1,117 @@
+.btn {
+  @include button-reset;
+  padding-top: 1.25vw;
+  padding-bottom: 1.3195vw;
+  font: inherit;
+  font-size: 1.25vw;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  background-color: $active-color;
+  box-shadow: 0px 15px 40px rgba(130, 0, 175, 0.2);
+  outline: none;
+  transition: .5s;
+
+  &:hover,
+  &:focus {
+    transition: .3s;
+    background-color: $hovered-color;
+  }
+
+  &:disabled {
+    transition: .3s;
+    background-color: $inactive-color;
+  }
+
+  @include laptop-max {
+    padding-top: 18px;
+    padding-bottom: 19px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.btn-round {
+  @include button-reset;
+  z-index: 50;
+  width: 3.33vw;
+  height: 3.333vw;
+  background-color: $active-color;
+  border-radius: 50%;
+  transition: background .3s;
+  outline: none;
+
+  &.js-no-touch:hover {
+    transition: background .3s;
+    background-color: $hovered-color;
+  }
+
+  &:focus {
+    background-color: $active-color;
+  }
+
+  &:disabled {
+    transition: background .3s;
+    background-color: $inactive-color;
+  }
+
+  &:disabled:hover {
+    background-color: $inactive-color;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33.3333%;
+    height: 54.167%;
+    stroke: white;
+    fill: none;
+  }
+
+  &--down {
+    position: absolute;
+    left: 4.444%;
+    bottom: 0;
+    margin-bottom: 6.111vh;
+    animation: referenceDown 3s infinite;
+    animation-timing-function: ease-out;
+  }
+
+  @include tablet-max {
+    width: 48px;
+    height: 48px;
+
+    svg {
+      width: 16px;
+      height: 26px;
+    }
+
+    &--down {
+      left: 48px;
+      bottom: 0;
+      margin-bottom: 36px;
+
+      svg {
+        width: 12px;
+        height: 18px;
+      }
+    }
+  }
+
+  @include mobile-max {
+    width: 32px;
+    height: 32px;
+
+    svg {
+      width: 12px;
+      height: 18px;
+    }
+
+    &--down {
+      left: 8px;
+      margin-bottom: 18px;
+    }
+  }
+}

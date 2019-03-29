@@ -1,0 +1,246 @@
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+  background-color: rgba(#1b2a33, 0.5);
+
+  &--dark {
+    background-color: rgba($black-other, 0.8);
+  }
+
+  &.js-box-closed {
+    display: none;
+  }
+}
+
+.modal__wrapper {
+  position: absolute;
+}
+
+.modal__close-btn {
+  @include button-reset;
+  position: absolute;
+  top: 1.111vw;
+  right: 1.111vw;
+  width: 1.667vw;
+  height: 1.667vw;
+  z-index: 1002;
+
+  @include laptop-max {
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover .modal__close-icon::before,
+  &:hover .modal__close-icon::after,
+  &:focus .modal__close-icon::before,
+  &:focus .modal__close-icon::after {
+    background-color: black;
+  }
+
+  .modal__close-icon {
+    top: 0.6944vw;
+    height: 0.1389vw;
+    z-index: 1003;
+    width: 100%;
+    background: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 0.1389vw;
+      background-color: $active-color;
+      transition: 0.3s;
+    }
+
+    &::before {
+      top: 0.7639vw;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 0.7639vw;
+      transform: rotate(-45deg);
+    }
+
+    @include laptop-max {
+      top: 10px;
+      height: 2px;
+
+      &::before,
+      &::after {
+        height: 2px;
+      }
+
+      &::before {
+        top: 11px;
+      }
+
+      &::after {
+        bottom: 11px;
+      }
+    }
+  }
+}
+
+.modal__nav {
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 27.222vw;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0px 0.278vw 1.389vw rgba(130, 0, 175, 0.25);
+  overflow-y: auto;
+
+  @include tablet-max {
+    width: 392px;
+    box-shadow: 0px 4px 20px rgba(130, 0, 175, 0.25);
+  }
+
+  @include mobile-max {
+    width: 320px;
+    padding-top: 67px;
+  }
+}
+
+.modal__contact {
+  width: 36.667vw;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+
+  @include laptop-max {
+    width: 528px;
+  }
+
+  @include mobile-max {
+    width: 100%;
+    max-width: 528px;
+    padding-top: 67px;
+  }
+}
+
+.modal__nav-header {
+  height: 14.9%;
+  min-height: 45px;
+
+  @include mobile-max {
+    height: auto;
+    min-height: 1px;
+  }
+}
+
+.modal__nav-footer {
+  height: 16.3%;
+  min-height: 45px;
+
+  @include mobile-max {
+    height: auto;
+    min-height: 1px;
+  }
+}
+
+.modal__nav-link {
+  display: inline-block;
+  margin-bottom: 10.345%;
+  padding-right: 11.224%;
+  padding-left: 11.224%;
+  font-size: 1.25vw;
+  line-height: 1.5;
+
+  @include tablet-max {
+    margin-bottom: 24px;
+    padding-right: 33px;
+    padding-left: 33px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 17px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.modal__nav-consultation {
+  margin-top: auto;
+  padding-right: 20.408%;
+  padding-left: 20.408%;
+  text-align: center;
+
+  @include tablet-max {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  @include mobile-max {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.modal__nav-question {
+  margin-top: 0;
+  margin-bottom: 1px;
+  font-family: $warnock-pro;
+  line-height: 1.45;
+  font-size: 1.389vw;
+  font-style: italic;
+  color: $black-other;
+
+  @include tablet-max {
+    margin-bottom: 1px;
+    line-height: 29px;
+    font-size: 20px;
+  }
+}
+
+.modal__nav-slogan {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.0417vw;
+  line-height: 1.666;
+  color: $black-other;
+
+  @include tablet-max {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 52px;
+  }
+}
+
+.modal__nav-tel {
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-other;
+  transition: 0.3s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $hovered-color;
+  }
+
+  @include mobile-max {
+    display: block;
+    margin-bottom: 21px;
+  }
+}

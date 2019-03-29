@@ -1,0 +1,1788 @@
+.stickers {
+  @include list-reset();
+  width: 100%;
+
+  &__title {
+    font-family: $warnock-pro;
+    font-style: italic;
+    font-size: 1.389vw;
+    line-height: 1.45;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+
+    @include desktop-max {
+      &--sm-width {
+        max-width: 210px;
+      }
+    }
+
+    @include tablet-max {
+      letter-spacing: 0.7px;
+    }
+  }
+
+  @include tablet-max {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  @include mobile-max {
+    align-items: center;
+  }
+}
+
+.stickers__item {
+  position: absolute;
+  z-index: 2;
+  width: 22.223%;
+  padding-top: 2.2222vw;
+  padding-right: 3.3333%;
+  padding-bottom: 5.972%;
+  padding-left: 2.2222%;
+  background-color: $violet;
+  overflow-x: hidden;
+  transition: z-index 0.3s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    z-index: 10;
+  }
+
+  @include tablet-max {
+    width: 320px;
+    height: 320px;
+    padding-top: 32px;
+    padding-right: 48px;
+    padding-bottom: 86px;
+    padding-left: 32px;
+  }
+
+  @include mobile-max {
+    width: 304px;
+    height: 304px;
+  }
+
+  .stickers__icon {
+    position: absolute;
+    fill: $purple;
+  }
+
+  &--purple {
+    background-color: $purple;
+
+    .stickers__icon {
+      fill: $violet;
+    }
+  }
+
+  &--white {
+    background-color: white;
+
+    .stickers__icon {
+      fill: $violet;
+    }
+  }
+
+  .stickers__title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 0;
+
+    &--rotate {
+      transform: rotate(5deg);
+    }
+  }
+
+  .stickers__desc {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.25vw;
+    letter-spacing: 0.1px;
+
+    &--rotate {
+      transform: rotate(5deg);
+    }
+  }
+
+  @include tablet-max {
+    .stickers__title {
+      font-size: 20px;
+    }
+
+    .stickers__desc {
+      font-size: 18px;
+    }
+  }
+
+  @include mobile-max {
+    width: 304px;
+    height: 304px;
+  }
+}
+
+.stickers--intro {
+  .stickers__item {
+    overflow: auto;
+    width: 35.556vh;
+
+    &--like {
+      top: auto;
+      bottom: 88.4%;
+      left: 69.5%;
+      transform: rotate(-5deg);
+
+      .stickers__icon {
+        width: 57.8125%;
+        height: 66.875%;
+        bottom: 17.6875%;
+        right: 20%;
+        transform: rotate(0deg);
+      }
+    }
+
+    &--valuta {
+      bottom: 81%;
+      left: 40.5%;
+      transform: rotate(5deg);
+
+      .stickers__icon {
+        width: 50.625%;
+        height: 60.3125%;
+        bottom: 20.1875%;
+        right: 24.6875%;
+      }
+    }
+
+    &--idea {
+      bottom: 101.2%;
+      left: 67.3%;
+      transform: rotate(5deg);
+
+      .stickers__icon {
+        width: 68.4375%;
+        height: 76.875%;
+        bottom: 18%;
+        right: 24.6875%;
+      }
+    }
+
+    &--diagram {
+      bottom: 91.9%;
+      right: 14.65%;
+
+      .stickers__icon {
+        width: 60%;
+        height: 60%;
+        bottom: 18.3125%;
+        right: 20.3125%;
+      }
+    }
+
+    &--heart {
+      bottom: 98.5%;
+      right: 29.25%;
+      transform: rotate(-10deg);
+
+      .stickers__icon {
+        width: 53.125%;
+        height: 63.75%;
+        bottom: 19.5%;
+        right: 23.75%;
+      }
+    }
+
+    &--graph {
+      bottom: 79.9%;
+      left: 57.4%;
+      transform: rotate(10deg);
+
+      .stickers__icon {
+        width: 61.25%;
+        height: 64.6875%;
+        bottom: 19.125%;
+        right: 20.3125%;
+        transform: rotate(-5deg);
+      }
+    }
+
+    @include desktop-max {
+      &--like {
+        bottom: 29.4%;
+      }
+
+      &--valuta {
+        bottom: 22%;
+      }
+
+      &--idea {
+        bottom: 42.2%;
+      }
+
+      &--diagram {
+        bottom: 32.9%;
+      }
+
+      &--heart {
+        bottom: 39.5%;
+      }
+
+      &--graph {
+        bottom: 20.9%;
+      }
+    }
+
+    @include tablet-max {
+      width: 30.556vh;
+      min-width: 144px;
+      max-width: 320px;
+
+      &--like {
+        left: 62%;
+        bottom: 20.6%;
+        right: auto;
+      }
+
+      &--valuta {
+        bottom: 14%;
+        right: 58%;
+        left: auto;
+      }
+
+      &--idea {
+        left: 52.9%;
+        bottom: 31%;
+        right: auto;
+      }
+
+      &--diagram {
+        left: 44%;
+        bottom: 23%;
+        right: auto;
+      }
+
+      &--heart {
+        right: 44.4%;
+        bottom: 25.4%;
+      }
+
+      &--graph {
+        left: 32%;
+        bottom: 13.2%;
+      }
+    }
+
+    @include mobile-max {
+      width: 144px;
+      height: 144px;
+
+      &--like {
+        transform: rotate(-5.67deg);
+        left: 62%;
+        bottom: 20.6%;
+        right: auto;
+
+        .stickers__icon {
+          width: 92px;
+          height: 100px;
+          bottom: 21px;
+          right: 22px;
+          transform: rotate(0deg);
+        }
+      }
+
+      &--valuta {
+        transform: rotate(4.33deg);
+        bottom: 14%;
+        right: 58%;
+        left: auto;
+
+        .stickers__icon {
+          width: 81px;
+          height: 90px;
+          bottom: 25px;
+          right: 30px;
+        }
+      }
+
+      &--idea {
+        transform: rotate(6.71deg);
+        left: 52.9%;
+        bottom: 31%;
+        right: auto;
+
+        .stickers__icon {
+          width: 110px;
+          height: 114px;
+          bottom: 22px;
+          right: 30px;
+        }
+      }
+
+      &--diagram {
+        left: 44%;
+        bottom: 23%;
+        right: auto;
+        transform: rotate(-0.67deg);
+
+        .stickers__icon {
+          width: 96px;
+          height: 96px;
+          bottom: 22px;
+          right: 22px;
+        }
+      }
+
+      &--heart {
+        right: 44.4%;
+        bottom: 25.4%;
+        transform: rotate(-15deg);
+
+        .stickers__icon {
+          width: 75px;
+          height: 88px;
+          bottom: 26px;
+          right: 28px;
+        }
+      }
+
+      &--graph {
+        left: 32%;
+        bottom: 13.2%;
+        transform: rotate(15deg);
+
+        .stickers__icon {
+          width: 93px;
+          height: 91px;
+          bottom: 27px;
+          right: 24px;
+        }
+      }
+    }
+  }
+}
+
+.stickers--support {
+  .stickers__item {
+    width: 22.223%;
+    padding-top: 2.5694vw;
+    padding-right: 2.2222%;
+    padding-left: 2.2222%;
+
+    &--valuta {
+      top: 21vw;
+      left: 33.3%;
+
+      .stickers__icon {
+        width: 50.625%;
+        height: 59.375%;
+        bottom: 10.3125%;
+        right: 7.5%;
+      }
+    }
+
+    &--papers {
+      top: 12.1vw;
+      left: 4.4%;
+      transform: rotate(-5deg);
+      padding-right: 3.125%;
+
+      .stickers__icon {
+        width: 58%;
+        height: 63.75%;
+        transform: rotate(5deg);
+        bottom: 7.5%;
+        right: 7.8125%;
+      }
+    }
+  }
+
+  @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .stickers__item {
+      flex-shrink: 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 304px;
+      padding-top: 40px;
+      padding-right: 32px;
+      padding-left: 32px;
+
+      &--valuta {
+        padding-top: 34px;
+        padding-left: 30px;
+
+        .stickers__icon {
+          width: 140px;
+          height: 155px;
+          bottom: 32px;
+          right: 14px;
+        }
+      }
+
+      &--papers {
+        margin-top: 41px;
+        padding-right: 45px;
+
+        .stickers__icon {
+          width: 154px;
+          height: 180px;
+          bottom: 27px;
+          right: 32px;
+        }
+      }
+    }
+  }
+}
+
+// блок about
+
+.stickers--about {
+  @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stickers__item {
+    padding-top: 2.5%;
+    padding-right: 3.335%;
+    padding-left: 2.225%;
+
+    &--like {
+      padding-top: 2.5vw;
+      top: 12.8vw;
+      left: 4.5%;
+      letter-spacing: 0.1px;
+
+      .stickers__icon {
+        bottom: 12.5%;
+        right: 7.8125%;
+        width: 57.8125%;
+        height: 62.1875%;
+      }
+
+      .stickers__title {
+        margin-bottom: 11px;
+      }
+    }
+
+    &--structure {
+      padding-top: 2.5694vw;
+      top: 23.3vw;
+      left: 27.8%;
+      transform: rotate(-5deg);
+      letter-spacing: 0.2px;
+
+      .stickers__icon {
+        width: 61.875%;
+        height: 64.375%;
+        bottom: 9.375%;
+        right: 6.875%;
+        transform: rotate(5deg);
+      }
+    }
+
+    &--target {
+      top: 12.2vw;
+      right: 18.8%;
+      transform: rotate(3deg);
+      letter-spacing: 0.2px;
+
+      .stickers__icon {
+        width: 73.4375%;
+        height: 63.125%;
+        bottom: 9.6875%;
+        right: 2.1875%;
+        transform: rotate(-3deg);
+      }
+    }
+
+    @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin-bottom: 13px;
+      padding-top: 32px;
+      padding-right: 48px;
+      padding-bottom: 86px;
+      padding-left: 32px;
+
+      &--like {
+        padding-top: 36px;
+
+        .stickers__title {
+          margin-bottom: 11px;
+        }
+
+        .stickers__icon {
+          width: 185px;
+          height: 199px;
+          bottom: 40px;
+          right: 25px;
+        }
+      }
+
+      &--structure {
+        padding-top: 37px;
+
+        .stickers__icon {
+          width: 198px;
+          height: 206px;
+          bottom: 30px;
+          right: 22px;
+        }
+      }
+
+      &--target {
+        .stickers__icon {
+          width: 235px;
+          height: 202px;
+          bottom: 31px;
+          right: 7px;
+        }
+      }
+    }
+
+    &--like {
+      @include mobile-max {
+        padding-top: 35px;
+      }
+    }
+
+    &--target {
+      @include mobile-max {
+        padding-top: 30px;
+        padding-right: 35px;
+      }
+    }
+  }
+}
+
+// help
+
+.stickers--help {
+  @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stickers__item {
+    padding-top: 2.5694vw;
+    padding-right: 3.056vw;
+
+    @include mobile-max {
+      padding-right: 18px;
+    }
+
+    &--one {
+      left: 4.5%;
+      top: 22.2vw;
+      transform: rotate(5deg);
+
+      .stickers__icon {
+        width: 38.375%;
+        height: 58.125%;
+        bottom: 8.25%;
+        right: 6.5%;
+        transform: rotate(-6deg);
+      }
+    }
+
+    &--two {
+      left: 35.6%;
+      top: 16.7vw;
+      transform: rotate(-3deg);
+
+      .stickers__icon {
+        width: 43.75%;
+        height: 55.3125%;
+        bottom: 5.25%;
+        right: 7.8125%;
+        transform: rotate(3deg);
+      }
+    }
+
+    @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin-bottom: 4px;
+      padding-top: 37px;
+      padding-right: 15px;
+
+      &--one {
+        .stickers__icon {
+          width: 110px;
+          height: 165px;
+          bottom: 20px;
+          right: 24px;
+        }
+      }
+
+      &--two {
+        .stickers__icon {
+          width: 140px;
+          height: 173px;
+          bottom: 20px;
+          right: 25px;
+        }
+      }
+    }
+
+    &--notice {
+      right: 10.6%;
+      top: 11.2vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 27.778%;
+      height: auto;
+      padding-top: 3.2639vw;
+      padding-right: 3.472%;
+      padding-bottom: 3.472vw;
+      padding-left: 3.472%;
+      text-align: center;
+      color: $violet;
+      background-color: $white;
+      transform: rotate(5deg);
+      border-radius: 50%;
+      letter-spacing: 0.2px;
+
+      .stickers__desc {
+        width: 100%;
+      }
+
+      @include desktop-max {
+        .stickers__desc {
+          max-width: 310px;
+          padding-left: 16px;
+          padding-right: 7px;
+        }
+      }
+
+      @include tablet-max {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        padding-top: 47px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+      }
+
+      @include mobile-max {
+        top: -25px;
+        left: -27px;
+        flex-shrink: 0;
+        width: 360px;
+        height: 360px;
+        padding-top: 17px;
+        padding-right: 36px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+// блок job
+
+.stickers--job {
+  @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .stickers__item {
+    &--one {
+      top: 23.5vw;
+      left: 4.5%;
+      padding-top: 2.7083vw;
+
+      @include tablet-max {
+        top: 30.7%;
+        padding-top: 39px;
+
+        .stickers__icon {
+          width: 115px;
+          height: 176px;
+          bottom: 24px;
+          right: 32px;
+        }
+      }
+
+      @include mobile-max {
+        width: 304px;
+        height: 304px;
+        top: 0;
+        left: 0;
+        margin-bottom: 8px;
+        padding-top: 43px;
+        transform: rotate(5deg);
+
+        .stickers__desc {
+          width: 245px;
+        }
+      }
+
+      .stickers__icon {
+        width: 35.9375%;
+        height: 65.625%;
+        bottom: 3.5%;
+        right: 10%;
+        transform: rotate(-5deg);
+      }
+    }
+
+    &--two {
+      transform: rotate(-5deg);
+      top: 18.1vw;
+      left: 35.7%;
+      padding-top: 2.5694vw;
+
+      @include tablet-max {
+        top: 23.6%;
+        padding-top: 37px;
+
+        .stickers__icon {
+          width: 139px;
+          height: 180px;
+          right: 25px;
+          bottom: 17px;
+        }
+      }
+
+      @include mobile-max {
+        width: 304px;
+        height: 304px;
+      }
+
+      .stickers__icon {
+        width: 43.4375%;
+        height: 57.8125%;
+        right: 7.8125%;
+        bottom: 5.3125%;
+        transform: rotate(3deg);
+      }
+    }
+
+    &--three {
+      padding-right: 4.5139vw;
+      padding-top: 2.7083vw;
+      top: 23vw;
+      left: 58.9%;
+
+      @include tablet-max {
+        padding-right: 65px;
+        padding-top: 39px;
+        top: 30%;
+        left: 58.9%;
+
+        .stickers__icon {
+          width: 126px;
+          height: 159px;
+          bottom: 32px;
+          right: 30px;
+        }
+      }
+
+      @include mobile-max {
+        width: 304px;
+        height: 304px;
+
+        .stickers__desc {
+          width: 225px;
+        }
+      }
+
+      .stickers__icon {
+        width: 39.375%;
+        height: 49.6875%;
+        bottom: 10%;
+        right: 9.375%;
+      }
+    }
+
+    &--four {
+      width: 25%;
+      height: auto;
+      top: 43.1vw;
+      left: 5.4%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      overflow-y: hidden;
+
+      .stickers__desc {
+        padding-top: 24.8%;
+        padding-left: 6.199%;
+        width: 85.94%;
+        text-align: center;
+      }
+
+      @include tablet-max {
+        width: 304px;
+        height: 304px;
+        top: 56.4%;
+
+        .stickers__desc {
+          width: auto;
+          max-width: 241px;
+          padding-top: 67px;
+          padding-left: 20px;
+        }
+
+        .stickers__icon {
+          width: 114px;
+          height: 169px;
+        }
+      }
+
+      @include mobile-max {
+        flex-shrink: 0;
+        width: 304px;
+        height: 304px;
+        margin-top: -20px;
+        margin-bottom: -16px;
+
+        .stickers__desc {
+          padding-top: 35px;
+          padding-left: 29px;
+        }
+      }
+
+      .stickers__icon {
+        width: 31.625%;
+        height: 52.8125%;
+        right: 50.8%;
+        bottom: 47.9%;
+        transform: translate(50%, 50%);
+      }
+
+      @include mobile-max {
+        flex-shrink: 0;
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    &--five {
+      padding-top: 2.5694vw;
+      top: 40.1vw;
+      left: 31.1%;
+      transform: rotate(10deg);
+
+      @include tablet-max {
+        padding-top: 37px;
+        top: 52.4%;
+
+        .stickers__icon {
+          width: 153px;
+          height: 187px;
+          right: 13px;
+          bottom: 23px;
+        }
+      }
+
+      @include mobile-max {
+        width: 304px;
+        height: 304px;
+      }
+
+      .stickers__icon {
+        width: 45.625%;
+        height: 58.4375%;
+        right: 5.0625%;
+        bottom: 6.1875%;
+        transform: rotate(-11deg);
+      }
+    }
+
+    &--polygon {
+      width: 400px;
+      height: auto;
+      left: 67.2%;
+      width: 27.778%;
+      top: 40.4vw;
+      padding: 0;
+      background-image: url('../img/ico-star.svg');
+      background-repeat: repeat;
+      background-position: 0 0;
+      background-size: cover;
+      background-color: transparent;
+      color: $black;
+
+      @include tablet-max {
+        top: 52.9%;
+        width: 320px;
+        height: 320px;
+      }
+
+      @include mobile-max {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        flex-shrink: 0;
+        width: 320px;
+        height: 320px;
+      }
+
+      @media (max-width: 639px) {
+        width: 355px;
+        height: 355px;
+        margin-top: -8px;
+      }
+
+      .stickers__desc {
+        position: absolute;
+        top: 38.5%;
+        left: 20.25%;
+        width: 58.5%;
+        font-size: 0.972vw;
+        line-height: 1.789;
+        text-align: center;
+        letter-spacing: 0px;
+
+        @include tablet-max {
+          line-height: 25px;
+          font-size: 14px;
+          top: 114px;
+          left: 44px;
+          width: 234px;
+        }
+
+        @include mobile-max {
+          width: 200px;
+          top: 100px;
+          left: 60px;
+        }
+
+        @media(max-width: 639px) {
+          width: 230px;
+          top: 131px;
+          left: 62px;
+        }
+      }
+    }
+
+    @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      flex-shrink: 0;
+    }
+
+    @include mobile-max {
+      &--four {
+        left: -7px;
+      }
+
+      &--polygon {
+        left: -25px;
+      }
+    }
+  }
+}
+
+.stickers__round-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: none;
+}
+
+
+// блок terms
+
+.stickers--terms {
+  @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stickers__item {
+    .stickers__desc {
+      @include mobile-max {
+        line-height: 28px;
+      }
+    }
+
+    @include mobile-max {
+      padding-top: 36px;
+    }
+
+
+    &--paper-plan {
+      left: 4.4%;
+      top: 25.6vw;
+      padding-top: 2.639vw;
+
+      .stickers__icon {
+        right: 10.3125%;
+        bottom: 9.375%;
+        width: 43.75%;
+        height: 55.9375%;
+      }
+
+      @include tablet-max {
+        padding-top: 38px;
+
+        .stickers__icon {
+          right: 33px;
+          top: auto;
+          bottom: 30px;
+          width: 140px;
+          height: 179px;
+        }
+      }
+    }
+
+    &--diagram-empty {
+      right: 42.2%;
+      top: 30.4vw;
+      padding-top: 2.639vw;
+      transform: rotate(5deg);
+
+      .stickers__icon {
+        right: 8.75%;
+        bottom: 7.6875%;
+        width: 57.8125%;
+        height: 60.3125%;
+        transform: rotate(-5deg);
+      }
+
+      @include tablet-max {
+        top: auto;
+        padding-top: 38px;
+        transform: rotate(5deg);
+
+        .stickers__icon {
+          right: 28px;
+          bottom: 31px;
+          width: 185px;
+          height: 181px;
+        }
+      }
+    }
+
+    &--persons {
+      top: 17.9vw;
+      right: 18.9%;
+      transform: rotate(-10deg);
+      overflow-y: hidden;
+
+      .stickers__icon {
+        right: 3.75%;
+        bottom: 1.875%;
+        width: 73.75%;
+        height: 70.625%;
+        transform: rotate(10deg);
+      }
+
+      @include tablet-max {
+        top: auto;
+
+        .stickers__icon {
+          right: 18px;
+          bottom: 21px;
+          width: 202px;
+          height: 171px;
+        }
+      }
+    }
+
+    @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    &--days {
+      width: 27.78vw;
+      height: auto;
+      left: 25.6%;
+      top: 3.9vw;
+      border-radius: 50%;
+      background-color: #ffffff;
+
+      @include tablet-max {
+        top: 0;
+        left: 0;
+        flex-shrink: 0;
+        width: 320px;
+        height: 320px;
+        padding-top: 0;
+        z-index: 0;
+      }
+
+      @include mobile-max {
+        left: -8px;
+        margin-bottom: -17px;
+      }
+
+      .stickers__desc {
+        width: 40%;
+        top: 46.5%;
+        left: 29%;
+        font-family: $warnock-pro;
+        font-style: italic;
+        line-height: 0.402;
+        font-size: 9.861vw;
+        color: $violet;
+
+        .stickers__days {
+          margin-left: 3.125%;
+          font-size: 4.44vw;
+        }
+
+        @include tablet-max {
+          top: 129px;
+          left: 52px;
+          line-height: 55px;
+          font-size: 142px;
+          width: auto;
+
+          .stickers__days {
+            margin-left: 5px;
+            font-size: 64px;
+          }
+        }
+      }
+    }
+  }
+
+  .stickers__round-item {
+    color: $violet;
+  }
+}
+
+.slider-stickers .stickers--brand {
+  display: none;
+
+  &.js-active {
+    display: block;
+  }
+
+  @include mobile-max {
+    display: none;
+
+    &.js-active {
+      display: none;
+    }
+  }
+}
+
+.stickers--brand {
+  display: none;
+
+  .stickers__item {
+    outline: 1px solid transparent;
+    width: 22.223%;
+    height: 22.223vw;
+
+    @include tablet-max {
+      width: 320px;
+      height: 320px;
+    }
+
+    @media (max-width: 900px) {
+      width: 240px;
+      height: 240px;
+    }
+
+    @include mobile-max {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 144px;
+      height: 144px;
+      margin-bottom: 30px;
+    }
+
+    &--off {
+      right: 57.8%;
+      top: 14.12vw;
+      transform: rotate(-5deg);
+      animation-delay: 1s;
+      animation-fill-mode: both;
+
+      .stickers__icon {
+        width: 52.8125%;
+        height: 53.4375%;
+        bottom: 22.5%;
+        right: 23.4375%;
+        transform: rotate(5deg);
+      }
+
+      @include tablet-max {
+        top: 37.1%;
+        right: 56.5%;
+
+        .stickers__icon {
+          width: 169px;
+          height: 171px;
+          bottom: 72px;
+          right: 75px;
+        }
+      }
+
+      @media (max-width: 900px) {
+        top: 52.1%;
+        right: 60.5%;
+
+        .stickers__icon {
+          bottom: 37px;
+          right: 35px;
+        }
+      }
+
+      @include mobile-max {
+        .stickers__icon {
+          width: 93px;
+          height: 80px;
+          bottom: 35px;
+          right: 30px;
+        }
+      }
+    }
+
+    &--check {
+      right: 59.4%;
+      top: 19.95vw;
+      transform: rotate(-5deg);
+      animation-delay: 1s;
+      animation-fill-mode: both;
+
+      .stickers__icon {
+        width: 64.0625%;
+        height: 62.5%;
+        bottom: 21.25%;
+        right: 18.125%;
+        transform: rotate(5deg);
+      }
+
+      @include tablet-max {
+        top: 37.1%;
+        right: 56.5%;
+
+        .stickers__icon {
+          width: 205px;
+          height: 190px;
+          bottom: 68px;
+          right: 58px;
+          transform: rotate(5deg);
+        }
+      }
+
+      @media (max-width: 900px) {
+        top: 52.1%;
+        right: 60.5%;
+
+        .stickers__icon {
+          bottom: 27px;
+          right: 16px;
+        }
+      }
+
+      @include mobile-max {
+        .stickers__icon {
+          width: 93px;
+          height: 80px;
+          bottom: 35px;
+          right: 30px;
+        }
+      }
+    }
+
+    &--graph {
+      right: 57.3%;
+      top: 18.185vw;
+      transform: rotate(5deg);
+      animation-delay: 1s;
+      animation-fill-mode: both;
+
+      .stickers__icon {
+        width: 61.25%;
+        height: 56.875%;
+        bottom: 20.9375%;
+        right: 20.3125%;
+        transform: rotate(-5deg);
+      }
+
+      @include tablet-max {
+        top: 37.1%;
+        right: 55.1%;
+
+        .stickers__icon {
+          width: 196px;
+          height: auto;
+          bottom: 77px;
+          right: 59px;
+        }
+      }
+
+      @media (max-width: 900px) {
+        top: 52.1%;
+        right: 60.5%;
+
+        .stickers__icon {
+          bottom: 37px;
+          right: 24px;
+        }
+      }
+
+      @include mobile-max {
+        .stickers__icon {
+          width: 93px;
+          height: 80px;
+          bottom: 35px;
+          right: 30px;
+        }
+      }
+    }
+  }
+
+  @include mobile-max {
+    display: block;
+  }
+}
+
+.slider-stickers .stickers--technology {
+  display: none;
+
+  &.js-active {
+    display: block;
+  }
+
+  @include tablet-max {
+    position: absolute;
+    top: 813px;
+    padding-right: 48px;
+    padding-left: 48px;
+
+    &.js-active {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include mobile-max {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.stickers--technology {
+  .stickers__desc {
+    position: absolute;
+    top: 1.875vw;
+    right: 32.576%;
+    bottom: 1.667vw;
+    left: 9.09%;
+
+    &::after {
+      content: "?";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2.22vw;
+      height: 2.22vw;
+      line-height: 2.22vw;
+      font-size: 0.972vw;
+      border-radius: 50%;
+      color: $violet;
+      text-align: center;
+      vertical-align: middle;
+      background-color: white;
+    }
+
+    @include tablet-max {
+      top: 27px;
+      right: 86px;
+      bottom: 24px;
+      left: 24px;
+
+      &::after {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .stickers__flip-side-desc {
+    position: absolute;
+    top: 1.875vw;
+    right: 32.576%;
+    bottom: 1.667vw;
+    left: 9.09%;
+    margin: 0;
+    font-size: 0.972vw;
+    line-height: 1.789;
+
+    @include tablet-max {
+      font-size: 14px;
+      line-height: 25px;
+      top: 27px;
+      right: 86px;
+      bottom: 24px;
+      left: 24px;
+    }
+  }
+
+  .stickers__item {
+    width: 18.333%;
+    height: 18.333vw;
+    padding: 0;
+    perspective: 34.72vw;
+    background-color: transparent;
+    overflow: visible;
+
+    @media (max-width: 1439px) {
+      perspective: 500px;
+    }
+
+    @include tablet-max {
+      position: relative;
+      width: 264px;
+      height: 264px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 979px) {
+      &:nth-child(3) {
+        margin-right: 150px;
+      }
+    }
+
+    @include mobile-max {
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+
+    &--path {
+      left: 4.45%;
+      top: 31.3194vw;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+
+      @include tablet-max {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    &--inside {
+      top: 23.611vw;
+      left: 25.6%;
+      transform: rotate(-5deg);
+      animation-delay: 1.2s;
+      animation-fill-mode: both;
+
+      @include tablet-max {
+        top: 0;
+        left: 0;
+      }
+
+      @include mobile-max {
+        left: 29px;
+      }
+    }
+
+    &--around {
+      top: 33.5417vw;
+      left: 51%;
+      transform: rotate(3deg);
+      animation-delay: 1.4s;
+      animation-fill-mode: both;
+
+      @include tablet-max {
+        top: 6px;
+        left: 8px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    &--audit {
+      top: 20.972vw;
+      left: 4.45%;
+      transform: rotate(5deg);
+      animation-delay: 1s;
+      animation-fill-mode: both;
+
+      .stickers__desc {
+        right: 40px;
+      }
+
+      .stickers__flip-side-desc {
+        right: 40px;
+      }
+
+      @include tablet-max {
+        top: 0;
+        left: 12px;
+      }
+    }
+
+    &--territory {
+      top: 28.194vw;
+      left: 25.6%;
+      transform: rotate(-3deg);
+      animation-delay: 1.2s;
+      animation-fill-mode: both;
+
+      @include tablet-max {
+        top: 11px;
+        left: 0;
+      }
+
+      @include mobile-max {
+        left: 19px;
+      }
+    }
+
+    &--check-list {
+      top: 34.3056vw;
+      left: 51.1%;
+      animation-delay: 1.4s;
+      animation-fill-mode: both;
+
+      @media (max-width: 1024px) {
+        .stickers__desc {
+          right: 40px;
+        }
+      }
+
+      @include tablet-max {
+        top: 22px;
+        left: 12px;
+      }
+    }
+
+    .stickers__content {
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+      transition-property: transform;
+      transform-style: preserve-3d;
+
+      /* content backface is visible so that static content still appears */
+      backface-visibility: visible;
+      position:relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.js-no-touch:hover .stickers__content,
+    &.js-active .stickers__content {
+      transform: rotateY(180deg);
+    }
+
+    .stickers__front,
+    .stickers__back  {
+      // Backface visibility works great for all but IE. As such, we mark the backface visible in IE and manage visibility ourselves */
+      backface-visibility: hidden;
+      -ms-backface-visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $violet;
+      outline: 1px solid transparent;
+    }
+
+    .stickers__front,
+    &.js-no-touch:hover .stickers__front,
+    &.js-active .stickers__front {
+      transform: rotateY(0deg);
+    }
+
+    .stickers__back,
+    &.js-no-touch:hover .stickers__back,
+    &.js-active .stickers__back {
+      transform: rotateY(-180deg);
+    }
+
+    .stickers__front,
+    &.js-no-touch:hover .stickers__back,
+    &.js-active .stickers__back {
+      /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+      animation: stayvisible 0.5s both;
+      visibility: visible;
+      -ms-animation: donothing 0.5s;
+      -ms-transition: visibility 0s linear 0.17s;
+    }
+
+    .stickers__back,
+    &.js-no-touch:hover .stickers__front,
+    &.js-active .stickers__front {
+      /* IE Hack. Halfway through the card flip, set visibility. Keep other browsers visible throughout the card flip. */
+      animation: stayvisible 0.5s both;
+      -ms-animation: donothing 0.5s;
+      -ms-transition: visibility 0s linear 0.17s;
+      visibility: hidden;
+    }
+  }
+}
+
+.stickers__round-item {
+  position: absolute;
+  z-index: 2;
+  width: 27.92%;
+  height: auto;
+  border-radius: 50%;
+  background-color: white;
+
+  .stickers__icon {
+    position: absolute;
+    fill: $gray-light;
+  }
+
+  &--gray {
+    background-color: $gray;
+  }
+
+  &--query {
+    top: 6vw;
+    right: 7.7%;
+    transform: rotate(5deg);
+    padding-top: 13.75%;
+    padding-right: 5.5%;
+    padding-bottom: 8.472%;
+    padding-left: 5.7%;
+
+    @media (max-width: 1024px), only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      flex-shrink: 0;
+      margin-bottom: 20px;
+    }
+
+    .stickers__icon {
+      bottom: 53.7313%;
+      left: 34.83%;
+      transform: rotate(-5deg);
+      width: 31.84%;
+      height: 28.358%;
+    }
+
+    .stickers__desc {
+      margin: 0;
+      text-align: center;
+      z-index: 1;
+      line-height: 1.5;
+      font-size: 1.25vw;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  @include tablet-max {
+    &--query {
+      width: 402px;
+      height: 402px;
+      padding-top: 198px;
+      padding-right: 82px;
+      padding-bottom: 122px;
+      padding-left: 84px;
+
+      .stickers__icon {
+        width: 128px;
+        height: 114px;
+      }
+
+      .stickers__desc {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  @include mobile-max {
+    &--query {
+      flex-shrink: 0;
+      position: relative;
+      width: 360px;
+      height: 360px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: -15px;
+      left: -27px;
+      padding-top: 185px;
+      padding-right: 59px;
+      padding-bottom: 99px;
+      padding-left: 66px;
+
+      .stickers__icon {
+        top: 59px;
+        left: 122px;
+      }
+    }
+  }
+}
+
+.stickers__star-item {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-image: url("../img/bg-poly-star.svg");
+  background-size: 400px 400px;
+  background-position: center;
+
+  .stickers__desc {
+    max-width: 241px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .stickers li:nth-child(2n),
+  .stickers li:nth-child(2n) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

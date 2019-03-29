@@ -1,0 +1,33 @@
+.support {
+  position: relative;
+  height: 62.5vw;
+  padding-top: 5.417vw;
+  background-color: white;
+  overflow: hidden;
+
+  @include tablet-max {
+    padding-top: 78px;
+    height: auto;
+    min-height: 1px;
+    padding-bottom: 86px;
+  }
+
+  @include mobile-max {
+    padding-top: 54px;
+    padding-bottom: 21px;
+  }
+}
+
+.support__container {
+  position: relative;
+}
+
+.support__title {
+  @include tablet-max {
+    margin-bottom: 40px;
+  }
+
+  @include mobile-max {
+    margin-bottom: 0;
+  }
+}

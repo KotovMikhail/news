@@ -1,0 +1,28 @@
+<section class="contact contact--support">
+  <h2 class="contact__title visually-hidden">Форма обратной связи</h2>
+  <div class="contact__wrapper container">
+    <form class="contact__form contact__form--support" method="post" action="#">
+      <p class="contact__detail">Уже заинтересовались? Оставьте свои контакты и получите бесплатную консультацию по продукту</p>
+      <div class="contact__inputs-wrapper">
+        <div class="contact__input-wrapper">
+          <p class="contact__error-text">Ошибка ввода</p>
+          <input class="contact__input contact__input--name input" type="text" name="name" placeholder="Имя" required>
+        </div>
+        <div class="contact__input-wrapper">
+          <p class="contact__error-text">Ошибка ввода</p>
+          <input class="contact__input contact__input--email input" type="email" name="email" placeholder="E-mail"
+            required>
+        </div>
+        <div class="contact__input-wrapper">
+          <p class="contact__error-text">Ошибка ввода</p>
+          <input class="contact__input contact__input--tel input" type="tel" name="tel" placeholder="Телефон" required>
+        </div>
+        <button class="contact__btn contact__btn--support btn" type="submit">Отправить</button>
+      </div>
+      <div class="contact__checkbox-wrapper">
+        <input class="visually-hidden" id="agreement" type="checkbox" name="agreement" checked>
+        <label class="contact__checkbox-label" for="agreement">Я согласен с условиями обработки персональных данных</label>
+      </div>
+    </form>
+  </div>
+</section>

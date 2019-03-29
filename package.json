@@ -1,0 +1,29 @@
+{
+  "name": "plenum",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "postcss-reporter": "^5.0.0",
+    "postcss-scss": "^1.0.5",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.2.0"
+  },
+  "scripts": {
+    "start": "gulp default"
+  }
+}
